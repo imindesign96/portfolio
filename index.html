@@ -5,23 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script type="text/javascript" nonce="f9fb58781087434098e7a71ef7f" src="//local.adguard.org?ts=1626427514536&amp;type=content-script&amp;dmn=cdn.fbsbx.com&amp;app=com.brave.Browser.helper&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1&amp;sbe=0"></script>
 <script type="text/javascript" nonce="f9fb58781087434098e7a71ef7f" src="//local.adguard.org?ts=1626427514536&amp;name=Web%20of%20Trust&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
-    <!-- Main Start -->
+ 
+
+
+     <!-- Header End -->
     <div class="main">
+
+           <!-- Main Start -->
+    <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <div class="nav-inner">
+                        <ul>
+                            <li><a href="#home" class="nav-item link-item">home</a></li>
+                            <li><a href="#about" class="nav-item link-item">about</a></li>
+                            <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                            <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+     <!-- Header Start -->
         <!-- home Start -->
-        <section class="home-section align-item-center hidden">
+        <section class="home-section align-item-center active" id="home">
             <div class="container">
                 <div class="row align-item-center">
                     <div class="home-text">
                         <p>Hello, I'm</p>
                         <h1>PHAN NGOC VU</h1>
                         <h2>frontend web developer</h2>
-                        <a href="#" class="btn">more about me</a>
-                        <a href="#" class="btn">portfolio</a>                        
+                        <a href="#about" class="btn link-item">more about me</a>
+                        <a href="#portfolio" class="btn link-item">portfolio</a>                        
                     </div>
 
                     <div class="home-img">
@@ -34,7 +62,7 @@
         </section>  
 
         <!-- About Section Start -->
-        <section class="about-section sec-padding">
+        <section class="about-section sec-padding active" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -106,8 +134,8 @@
                             </div>
                         <!-- Experience Start -->
 
-                        <a href="#" class="btn">download cv</a>
-                        <a href="#" class="btn">contact me</a>
+                        <a href="cv.pdf" b class="btn">download cv</a>
+                        <a href="#contact" class="btn link-item">contact me</a>
                     </div>
 
                 </div>
@@ -117,7 +145,7 @@
 
         <!-- Portfolio Section Start -->
 
-        <section class="portfolio-section sec-padding">
+        <section class="portfolio-section sec-padding active" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -131,51 +159,8 @@
                             <img src="img/portfolio/1.jpg" alt="portfolio item thumb">
                         </div>
                         <h3 class="portfolio-item-title">education course website</h3>
-                    </div>
-                    <!-- Portfolio iTem End -->
-                    <!-- Portfolio iTem Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/portfolio/2.jpg" alt="portfolio item thumb">
-                        </div>
-                        <h3 class="portfolio-item-title">education course website</h3>
-                    </div>
-                    <!-- Portfolio iTem End -->
-                    <!-- Portfolio iTem Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/portfolio/3.jpg" alt="portfolio item thumb">
-                        </div>
-                        <h3 class="portfolio-item-title">education course website</h3>
-                    </div>
-                    <!-- Portfolio iTem End -->
-                    <!-- Portfolio iTem Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/portfolio/4.jpg" alt="portfolio item thumb">
-                        </div>
-                        <h3 class="portfolio-item-title">education course website</h3>
-                    </div>
-                    <!-- Portfolio iTem End -->
-                    <!-- Portfolio iTem Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/portfolio/5.jpg" alt="portfolio item thumb">
-                        </div>
-                        <h3 class="portfolio-item-title">education course website</h3>
-                    </div>
-                    <!-- Portfolio iTem End -->
-                    <!-- Portfolio iTem Start -->
-                    <div class="portfolio-item">
-                        <div class="portfolio-item-thumbnail">
-                            <img src="img/portfolio/6.jpg" alt="portfolio item thumb">
-                        </div>
-                        <h3 class="portfolio-item-title">education course website</h3>
-                    </div>
-                    <!-- Portfolio iTem End -->
-                    
-                    <button type ="button" class="btn view-project-btn">view project</button>
-                    <div class="profolio-item-details">
+                        <button type ="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
                         <div class="description">
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi pariatur officiis reiciendis accusantium! Dolore nobis corporis quibusdam explicabo adipisci?</p>
                         </div>
@@ -188,11 +173,181 @@
                             </ul>
                         </div>
                     </div>
+                    </div>
+                    <!-- Portfolio iTem End -->
+                    <!-- Portfolio iTem Start -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="img/portfolio/2.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">education course website</h3>
+                        <button type ="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi pariatur officiis reiciendis accusantium! Dolore nobis corporis quibusdam explicabo adipisci?</p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>Created - <span>4 Dec 2009</span></li>
+                                <li>Technologies used - <span>html,css</span></li>
+                                <li>Role - <span>front</span></li>
+                                <li>view Online -  <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Portfolio iTem End -->
+                    <!-- Portfolio iTem Start -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="img/portfolio/3.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">education course website</h3>
+                        <button type ="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi pariatur officiis reiciendis accusantium! Dolore nobis corporis quibusdam explicabo adipisci?</p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>Created - <span>4 Dec 2009</span></li>
+                                <li>Technologies used - <span>html,css</span></li>
+                                <li>Role - <span>front</span></li>
+                                <li>view Online -  <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Portfolio iTem End -->
+                    <!-- Portfolio iTem Start -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="img/portfolio/4.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">education course website</h3>
+                        <button type ="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi pariatur officiis reiciendis accusantium! Dolore nobis corporis quibusdam explicabo adipisci?</p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>Created - <span>4 Dec 2009</span></li>
+                                <li>Technologies used - <span>html,css</span></li>
+                                <li>Role - <span>front</span></li>
+                                <li>view Online -  <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Portfolio iTem End -->
+                    <!-- Portfolio iTem Start -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="img/portfolio/5.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">education course website</h3>
+                        <button type ="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi pariatur officiis reiciendis accusantium! Dolore nobis corporis quibusdam explicabo adipisci?</p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>Created - <span>4 Dec 2009</span></li>
+                                <li>Technologies used - <span>html,css</span></li>
+                                <li>Role - <span>front</span></li>
+                                <li>view Online -  <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Portfolio iTem End -->
+                    <!-- Portfolio iTem Start -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="img/portfolio/6.jpg" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">education course website</h3>
+                        <button type ="button" class="btn view-project-btn">view project</button>
+                    <div class="portfolio-item-details">
+                        <div class="description">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi pariatur officiis reiciendis accusantium! Dolore nobis corporis quibusdam explicabo adipisci?</p>
+                        </div>
+                        <div class="general-info">
+                            <ul>
+                                <li>Created - <span>4 Dec 2009</span></li>
+                                <li>Technologies used - <span>html,css</span></li>
+                                <li>Role - <span>front</span></li>
+                                <li>view Online -  <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Portfolio iTem End -->
+                    
+                    
                 </div>
             </div>
         </section>
         <!-- Portfolio Section End -->
 
+        <!-- Contact section Start-->
+
+        <section class="contact-section sec-padding active" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>contact me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact-form">
+                        <form >
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Name" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Email" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <textarea placeholder="Message" class="input-control" required></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <button type="submit" class="btn">send message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <h3>Email</h3>
+                            <p>phanngocvu89@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>Phone</h3>
+                            <p>090 9240 9305</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>follow me</h3>
+                            <div class="social">
+                                <a href="#" target = "_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target = "_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target = "_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target = "_blank"><i class="fab fa-facebook-f"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Contact section End-->
         
 
 
@@ -200,27 +355,17 @@
     <!-- Main End -->
 
     <!-- PortFolio Item Details Popup Start -->
-    <div class="portfolio-poup">
+    <div class="portfolio-popup">
         <div class="pp-inner">
             <div class="pp-content">
                 <div class="pp-header">
+                    <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
                     <div class="pp-thumbnail">
                         <img src="img/portfolio/3.jpg" alt="pp-thumbnail">
                     </div>
-                    <h3>App Landing Page</h3>
+                    <h3></h3>
                 </div>
-                <div class="pp-body">
-                    <div class="description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde commodi pariatur officiis reiciendis accusantium! Dolore nobis corporis quibusdam explicabo adipisci?</p>
-                    </div>
-                    <div class="general-info">
-                        <ul>
-                            <li>Created - <span>4 Dec 2009</span></li>
-                            <li>Technologies used - <span>html,css</span></li>
-                            <li>Role - <span>front</span></li>
-                            <li>view Online -  <span><a href="#" target="_blank">www.domain.com</a></span></li>
-                        </ul>
-                    </div>
+                <div class="pp-body"></div>
                 </div>
             </div>
         </div>
