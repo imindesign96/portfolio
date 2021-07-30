@@ -46,9 +46,7 @@ body{
     padding: 35px 15px;
 }
 
-body.hide-scrolling{
-    overflow-y: hidden;
-}
+
 body::before{
     content: '';
     position: fixed;
@@ -378,13 +376,13 @@ header .nav-toggler.hide{
 Home Section
 -------------------*/
 .home-section{
-    /* display: flex; */
+    display: flex;
     padding: 120px 0;
 }
 
-.home-section.active{
+/* .home-section.active{
     display: flex;
-}
+} */
 
 .home-text, 
 .home-img{
