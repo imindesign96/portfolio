@@ -84,17 +84,17 @@ section{
     min-height: 90vh;
     border-radius: 30px;
     backdrop-filter: var(--backdrop-filter-blur);
-    display: none;
+    display: block;
     margin-bottom: 30px;
  
 }
-section.active{
+/* section.active{
     display: block;
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 section.fade-out{
     animation: fadeOut 0.5s ease-in-out forwards;
-}
+} */
 .flex-end{
     justify-content: flex-end;
 }
@@ -196,6 +196,23 @@ button{
     }
     100%{
         opacity: 0;
+    }
+}
+
+@keyframes zoomInOut{
+    0%,100%{
+        transform: scale(0.5);
+    }50%{
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceTop{
+    0%,100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
     }
 }
 /* Header */
@@ -762,4 +779,70 @@ Home Section
     .contact-info-item .social a:hover{
         color: var(--white);
         background-color: var(--main-color);
+    }
+
+
+    .bg-circles{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        max-width: 1200px;
+        width: calc(100% - 30px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bg-circles div{
+        position: absolute;
+        border-radius: 50%;
+        
+    }
+
+    .bg-circles .circle-1{
+        height: 60px;
+        width: 60px;
+        background-color: blue;
+        left: 5%;
+        top: 10%;
+        opacity: 0.1;
+        animation: zoomInOut 8s linear infinite;
+    }
+    .bg-circles .circle-2{
+        height: 80px;
+        width: 80px;
+        background-color: red;
+        left: 40%;
+        top: 60%;
+        opacity: 0.2;
+        animation: bounceTop 5s ease-in-out infinite;
+    }
+
+    .bg-circles .circle-3{
+        height: 70px;
+        width: 70px;
+        background-color: yellow;
+        left: -3%;
+        top: 80%;
+        opacity: 0.3;
+        animation: zoomInOut 8s linear infinite;
+    }
+
+    .bg-circles .circle-4{
+        height: 150px;
+        width: 150px;
+        background-color: var(--pink-light);
+        right: -5%;
+        top: 20%;
+        opacity: 0.4;
+        animation: zoomInOut 8s linear infinite;
+    }
+
+    .bg-circles .circle-5{
+        height: 80px;
+        width: 80px;
+        background-color: rgb(142, 10, 194);
+        right: 10%;
+        top: 90%;
+        opacity: 0.2;
+        animation: bounceTop 5s ease-in-out infinite;
     }

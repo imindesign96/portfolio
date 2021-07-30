@@ -3,20 +3,19 @@
 const tabsContainer = document.querySelector(".about-tabs"),
 aboutSection = document.querySelector(".about-section");
 
-/* ----------------- Toggle Navbar -----------------*/
-const navToggleer = document.querySelector(".nav-toggler");
-navToggleer.addEventListener("click", () =>{
-    hideSection();    
-    toggleNavbar();
-    document.body.classList.toggle("hide-scrolling");
-})
+// /* ----------------- Toggle Navbar -----------------*/
+// const navToggleer = document.querySelector(".nav-toggler");
+// navToggleer.addEventListener("click", () =>{
+//     hideSection();    
+//     toggleNavbar();
+// })
 
-function hideSection(){
-    document.querySelector("section.active").classList.toggle("fade-out");
-}
-function toggleNavbar(){
-    document.querySelector(".header").classList.toggle("active");
-}
+// function hideSection(){
+//     document.querySelector("section.active").classList.toggle("fade-out");
+// }
+// function toggleNavbar(){
+//     document.querySelector(".header").classList.toggle("active");
+// }
 
 /* --------------- ACTIVE SECTION ------------------- */
 document.addEventListener("click", (e) => {
@@ -35,7 +34,7 @@ document.addEventListener("click", (e) => {
             document.querySelector(e.target.hash).classList.add("active");
             window.scrollTo(0,0);
             document.body.classList.remove("hide-scrolling");
-            navToggleer.classList.remove("hide"); 
+            navToggleer.classList.add("hide"); 
 
         },500)
     }
